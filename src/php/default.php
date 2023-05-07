@@ -12,7 +12,7 @@ function getDB() {
 		$fh = fopen($fileLoc, 'r');
 		$jsonStr = fgets($fh);
 		$arr = json_decode($jsonStr, true);
-		$dbPass = $arr['Azerty123'];
+		$dbPass = $arr['default-password'];
 		fclose($fh);
 	} else {
 		die('no file found');
